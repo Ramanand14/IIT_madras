@@ -35,7 +35,8 @@ def predictRuns(testInput):
     elif(name == 'Sunrisers Hyderabad'):
             score1 = 0
 
-    #check
+    #check for venue
+
     #sum of other type of runs
     r2 = data['extras'].sum() + data['wides'].sum() + data['noballs'].sum() + data['byes'].sum() + data['legbyes'].sum()
     #print('r2: '+str(r2))
@@ -47,6 +48,8 @@ def predictRuns(testInput):
     #predicted score for next 14 overs
     score2 = avg_r * 28
     #print(score2)
+
+    #wicket factor
 
     prediction = (score1 + score2)/2
     return prediction
