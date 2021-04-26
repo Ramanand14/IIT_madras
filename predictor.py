@@ -66,7 +66,7 @@ def predictRuns(testInput):
 
     if(count >= 4):
         dn = count * 3
-        score2 = score2 - dn
+        score2 = score2 + dn
         #print(dn)
         #print(score2)
 
