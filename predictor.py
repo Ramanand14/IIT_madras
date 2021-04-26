@@ -32,6 +32,10 @@ def predictRuns(testInput):
             score1 = 95
     elif(name == 'Sunrisers Hyderabad'):
             score1 = 108.66
+    else:
+        print('Incorrect or improper team name!!!')
+        prediction = 0
+        return prediction
 
     #sum of other type of runs
     r2 = data['extras'].sum() + data['wides'].sum() + data['noballs'].sum() + data['byes'].sum() + data['legbyes'].sum()
@@ -66,5 +70,6 @@ def predictRuns(testInput):
         #print(dn)
         #print(score2)
 
+    #predict the score and return to main
     prediction = (score1 + score2)/2
     return prediction
